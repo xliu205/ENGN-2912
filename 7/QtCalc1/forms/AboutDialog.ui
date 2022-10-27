@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>AboutDialog</class>
+  <widget class="QDialog" name="AboutDialog">
+
+    <property name="windowModality">
+      <enum>Qt::ApplicationModal</enum>
+    </property>
+
+    <!-- property name="geometry">
+      <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>300</width>
+	<height>40</height>
+      </rect>
+    </property -->
+
+    <property name="windowTitle">
+      <string>QtCalc</string>
+    </property> <!-- "windowTitle" -->
+
+    <layout class="QVBoxLayout" name="verticalLayout_1">
+
+      <item>
+	<widget class="QLabel" name="title_label">
+	  <property name="text">
+	    <string>ENGN2912B 2017 Qt Calculator</string>
+	  </property>
+	  <property name="font">
+	    <font><pointsize>16</pointsize></font>
+	  </property>
+	  <property name="alignment">
+	    <set>Qt::AlignCenter</set>
+	  </property>
+	</widget> <!-- "title_label" -->
+      </item>
+
+      <item> <!-- verticalLayout_1 item 2 -->
+	<layout class="QFormLayout" name="formLayout">
+
+	  <item row="1" column="0">
+	    <widget class="QLabel" name="qt_version_title_label">
+	      <property name="font">
+		<font><pointsize>10</pointsize></font>
+	      </property>
+	      <property name="text">
+		<string>Qt Version:</string>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="1" column="1">
+	    <widget class="QLabel" name="qt_version_label">
+	      <property name="font">
+		<font><pointsize>10</pointsize></font>
+	      </property>
+	      <property name="text">
+		<string>qt ver</string>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="2" column="0">
+	    <widget class="QLabel" name="built_date_title_label">
+	      <property name="font">
+		<font><pointsize>10</pointsize></font>
+	      </property>
+	      <property name="text">
+		<string>Built on:</string>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="2" column="1">
+	    <widget class="QLabel" name="built_date_label">
+	      <property name="font">
+		<font><pointsize>10</pointsize></font>
+	      </property>
+	      <property name="text">
+		<string>build date time</string>
+	      </property>
+	    </widget>
+	  </item>
+
+	</layout> <!-- "formLayout" -->
+      </item>
+
+      <item>  <!-- verticalLayout_1 item 3 -->
+	<widget class="QLabel" name="author_label">
+	  <property name="font">
+	    <font><pointsize>10</pointsize></font>
+	  </property>
+	  <property name="text">
+	    <string>(c) 2017 Your Name</string>
+	  </property>
+	  <property name="alignment">
+	    <set>Qt::AlignCenter</set>
+	  </property>
+	</widget> <!-- "author_label" -->
+      </item>
+
+      <item>  <!-- verticalLayout_1 item 4 -->
+	<widget class="QPushButton" name="close_button">
+	  <property name="text">
+	    <string>Close</string>
+	  </property>
+	  <property name="font">
+	    <font><pointsize>10</pointsize></font>
+	  </property>
+	</widget> <!--  name="close_button" -->
+      </item>
+
+    </layout> <!-- "verticalLayout_1" -->
+
+  </widget> <!-- AboutDialog" -->
+
+  <connections/>
+</ui>
